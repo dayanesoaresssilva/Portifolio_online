@@ -1,0 +1,310 @@
+/*Estilo Geral*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+  background-color: rgb(248, 246, 222);
+  height: 100vh;
+}
+
+h2.titulo{
+  color: rgb(125, 113, 69);
+  font-size: 28px;
+}
+
+.flex{
+  display: flex;
+}
+
+.interface{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.btn_contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: rgba(212, 189, 113, 0.6);
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .2s;
+  color: #bf9752
+}
+
+.btn_contato button:hover{
+ box-shadow: 0px 0px 8px rgba(255, 242, 154, 0.867);
+ transform:scale(1.08);
+
+}
+
+/*Header*/
+header{
+  padding: 40px 4%;
+
+}
+
+header > .interface{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a{
+  color: rgb(100, 92, 54);
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+
+}
+
+header a:hover{
+  color: rgb(255, 186, 91);
+  transform: scale(1.08);
+}
+
+header nav ul{
+  list-style-type: none;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 0 40px;
+}
+
+
+
+ 
+
+/*Estilo do topo do site*/
+section .topo-site{
+  padding: 40px 4%;
+}
+
+section .topo-site .flex{
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-site h1{
+  color: rgb(125, 113, 69);
+  font-size: 38px;
+  line-height: 40px;
+}
+
+.topo-site p{
+  color: rgb(0, 0, 0);
+  margin: 40px 0;
+  text-align: justify;
+}
+
+/*Estilo das Especialidades*/
+section.sobre{
+  padding: 60px 4%;
+   
+}
+
+.sobre .habilidades-box{
+  color: rgb(0, 0, 0);
+  padding: 40px;
+}
+
+.sobre .habilidades-box i{
+  font-size: 48px;
+  color: rgb(125, 113, 69);
+}
+
+.sobre .habilidades-box h3{
+  font-size: 27px;
+  color: rgb(175, 154, 79);
+  margin: 8px 0;
+}
+
+/*Projetos*/
+section.projetos{
+  padding: 40px 4%
+}
+
+section.projetos .flex{
+  align-items: center;
+  gap: 60px;
+}
+
+h3.design{
+  font-size: 27px;
+  color: rgba(106, 153, 180, 0.752);
+  margin-bottom: 20px;
+  
+}
+
+.projetos p{
+  color: rgb(35, 28, 69);
+  margin: 20px 0;
+  text-align: justify;
+  
+}
+
+section.projetos img{
+  border-radius: 20px;
+  
+}
+
+.btn-git button{
+  margin: 50px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: rgba(106, 153, 180, 0.752);
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .2s;
+  color: #044761
+ 
+}
+
+.btn-git button:hover{
+  box-shadow: 0px 0px 8px rgba(4, 26, 125, 0.867);
+  transform:scale(1.08);
+ 
+ }
+
+ /*estilo dos botões de link*/
+ section.links h2{
+  color: rgb(125, 113, 69);
+ }
+ 
+ .btn-social button{
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  background-color: #bf9752;
+  border: none;
+  font-size: 28px;
+  margin: 0 5px;
+  margin-top: 28px;
+  margin-block-end: 95px;
+ }
+
+  .btn-social i{
+  color: #836530;
+
+ }
+
+ .btn-social button:hover{
+  box-shadow: 0px 0px 8px rgb(122, 90, 34);
+  transform:scale(1.08);
+ 
+ }
+
+ /*estilo footer*/
+
+ footer{
+  padding: 20px 4%;
+  box-shadow: 0 0 40px 10px #e7e19fb6;
+ }
+
+ footer .flex{
+  justify-content: space-between;
+
+ }
+
+ .borda{
+  border-top: 2px solid #bf9752;
+ }
+ 
+ footer .line-footer{
+  padding: 10px 0;
+ }
+ 
+ footer .line-footer p i{
+  color: #bf9752;
+  font-size: 26px;
+ }
+
+ footer .line-footer p a{
+  color: black;
+ }
+
+ /*site responsivel*/
+ @media  screen and (max-width: 1020px) {
+ 
+ /*Header*/
+  .menu-desktop , .btn_contato{
+    display: none;
+  }
+
+  /*classes gerais*/
+  .flex{
+    flex-direction: column;
+  }
+
+  .topo-site .flex{
+    flex-direction: column-reverse;
+  }
+
+  /*topo do site*/
+
+  .topo-site h1{
+    font-size: 27px;
+    line-height: 40px;
+  }
+
+  .topo-site p{
+  margin: 20px 0;
+  text-align: justify;
+  font-size: 18px;
+  }
+
+  section .topo-site{
+    padding: 10px 8%;
+  }
+
+ /*estilo imagens*/
+ 
+ section.topo-site img{
+  width: 90%;
+ }
+ 
+ section.projetos img{
+    border-radius: 20px;
+    width: 90%;
+  }
+  
+  /*habilidades*/
+
+  section.sobre{
+    padding: 60px 8%;
+     
+  }
+
+  /*footer*/
+  footer .flex{
+    flex-direction: column;
+  
+   }
+
+   footer .line-footer{
+    text-align: center;
+   }
+
+
+  
+ }
+
+ 
+
+
+
+
+
+
+
+
