@@ -206,6 +206,10 @@ section.projetos img{
 
  /*estilo footer*/
 
+ .carta {
+  margin: 1%;
+ }
+ 
  footer{
   padding: 20px 4%;
   box-shadow: 0 0 40px 10px #e7e19fb6;
@@ -227,10 +231,12 @@ section.projetos img{
  footer .line-footer p i{
   color: #bf9752;
   font-size: 26px;
+  
  }
 
  footer .line-footer p a{
-  color: black;
+  
+  color: #bf9752;
  }
 
  /*site responsivel*/
